@@ -93,3 +93,18 @@ $(document).ready(function () {
     }
   );
 });
+
+// mobile nav
+
+$(".js--nav-icon").click(function () {
+  var nav = $(".js--main-nav");
+  var icon = $(".js--ion-icon");
+
+  nav.slideToggle(200);
+
+  if (icon[0].name === "menu-outline") {
+    icon.attr("name", "close-outline");
+  } else {
+    icon.attr("name", "menu-outline");
+  }
+});
